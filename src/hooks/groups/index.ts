@@ -368,16 +368,16 @@ export const useGroupAbout = (
   const mediaType = validateURLString(currentMedia)
   const [activeMedia, setActiveMedia] = useState<
     | {
-      url: string | undefined
-      type: string
-    }
+        url: string | undefined
+        type: string
+      }
     | undefined
   >(
     mediaType.type === "IMAGE"
       ? {
-        url: currentMedia,
-        type: mediaType.type,
-      }
+          url: currentMedia,
+          type: mediaType.type,
+        }
       : { ...mediaType },
   )
 
